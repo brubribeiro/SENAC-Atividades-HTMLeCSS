@@ -1,0 +1,13 @@
+main{
+    padding-top: 50px;
+    text-align: justify;
+    line-height: 2.0;
+}
+
+.botao{
+    background-color: firebrick;
+    color: white;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 6px;
+}

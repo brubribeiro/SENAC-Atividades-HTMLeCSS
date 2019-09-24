@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 9</title>
+		<link rel="stylesheet"  href="css/estilo.css">
+        <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+        <!-- FancyBox -->
+        <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+        <script type="text/javascript" src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+        <!-- BxSlider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider();
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+         <nav>
+             <img src="imagens/LOGO4.png">
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#nosso-trabalho">NOSSO TRABALHO</a></li>
+                <li><a href="#sabores">SABORES</a></li>
+                <li><a href="#contato">CADASTRO</a></li>
+            </ul>    
+  		</nav>
+            </div>
+       </header>
+            <section id="home">
+                <div class="home">
+                <p>O sabor a seu alcance...</p>
+                <a href="#">Saiba mais</a>
+                </div>
+            </section>
+            <section id="nosso-trabalho">
+                <h2>Nosso trabalho</h2>
+                <p>Organizamos buffet completo para todo tipo de evento.</p>
+                    <div class="galeria">
+                        <a data-fancybox="gallery" href="imagens/sl1.png"><img src="imagens/sl1.png" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/sl2.png"><img src="imagens/sl2.png" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/sl3.png"><img src="imagens/sl3.png" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/sl4.png"><img src="imagens/sl4.png" width="350px"></a>
+                    </div>
+                    <div class="slide">
+                        <div class="slider">
+                            <div><img src="imagens/sl1.png"></div>
+                            <div><img src="imagens/sl2.png"></div>
+                            <div><img src="imagens/sl3.png"></div>
+                            <div><img src="imagens/sl4.png"></div>
+                        </div>
+                    </div>
+            </section>
+            <section id="sabores">
+			     <div class="lista-sabores">
+                     <h2>Sabores</h2>
+                     Saiba tudo sobre os sabores oferecido <br>e faça sua escolha!
+                     <ul class="menu-sabores">
+                        <a href="#"><li>Trufados</li></a>
+                        <a href="#"><li>Frutas</li></a>
+                        <a href="#"><li>Clássicos</li></a>
+                        <a href="#"><li>Chocolate</li></a>
+                    </ul>
+                 </div>
+            </section>
+            <section id="contato">
+                <h2>Cadastro</h2>
+                <p>Organizamos buffet completo para todo tipo de evento. <br>Para maiores informações entre em contato conosco.</p>
+                <div class="contato">
+                    <form>
+                        Nome:<br>
+                        <input type="text" placeholder="Digite seu nome"><br>
+                        
+                        Endereço:<br>
+                        <input type="text" placeholder="Digite seu telefone"><br>
+                        Telefone:<br>
+                        <input type="text" placeholder="Digite seu telefone"><br>
+                         E-mail:<br>
+                        <input type="text" placeholder="Digite seu telefone"><br>
+                        <input type="submit" value="Enviar">
+                        
+                    </form>
+                    <div class="contato-dir">
+                        
+                            <p>As melhores opções.<br> Produtos de alta qualidade customizados para cada tipo de evento.</p>
+                            <h1> Aberto para Você</h1>
+                            <p>Endereço: Lírio, 198 - Bela Vista - Ipatinga - MG<br>
+
+                            Telefone: (55) 31-112-222<br>
+
+                            Email: email@website.com</p>
+                       <div class="rede">
+                        <div class="redes">
+                           <a  href="#" ><img src="imagens/face.png"></
+                            a>
+                           <a  href="#" ><img src="imagens/twiter.png"></a>
+                           <a  href="#" ><img src="imagens/insta.png"></a>
+                           
+                           <a  href="#" ><img src="imagens/local.png"></a>
+                           
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer> 
+        
+    </body>
+    
+</html>

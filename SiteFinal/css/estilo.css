@@ -1,0 +1,353 @@
+@font-face{
+    src:url(../fonts/Raleway-ExtraLight.ttf);
+    font-family:fontebody;
+}
+
+@font-face{
+    src:url(../fonts/YanoneKaffeesatz-ExtraLight.ttf);
+    font-family:fontemenu;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: fontebody;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+}
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+
+}
+
+.menu{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-family: fontemenu;
+    font-size: 20px;
+}
+.menu a:hover, .ativo{
+    color:dimgray;
+    border-bottom: 2px solid dimgray;
+    padding-bottom: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin:auto;
+}
+.banner{
+    background-image: url(../imagens/quem-somos.jpg);
+    height: 378px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bannerhome{
+    background-image: url(../imagens/home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 500px;
+    color:black;
+	text-align: center;
+}
+.banner-noticias{
+    background-image: url(../imagens/noticias.jpg);
+    
+}
+.banner-cadastro{
+    background-image: url(../imagens/cadastrar.jpg);
+}
+main{
+    width: 1124px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+h1, h2{
+    color:#007290;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+h2, legend{
+    color:#cd6148;
+}
+.texto2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.txt{
+    width: 240px;
+}
+
+iframe{
+    width: 570px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.noticia1{
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+    margin-bottom: 20px;
+}
+
+.noticia1 p{
+    margin-left: 15px;
+}
+.noticias{
+    display: flex;
+    justify-content: space-between;
+}
+.direita{   
+    width: 300px;
+}
+.direita img{
+    margin-bottom: 30px;
+}
+fieldset{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #007290;
+}
+.entrada, .data, .numero{
+    margin: 10px;
+    border: 1px solid #007290;
+    border-radius: 4px;
+    padding: 10px;
+    width: 50%;
+}
+.numero{
+    width: 15%;
+}
+.botao{
+    background-color: #cd6148;
+    color: white;
+    font-size: 14px;
+    padding: 15px 25px;
+    border-radius: 
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.redes-sociais{
+    padding: 20px;
+}
+
+footer p{
+    padding-bottom: 20px;
+    color: white;
+}
+.botao-menu{
+    display: none;
+}
+.botao-menu img{
+    width: 60px;
+}
+
+/*
+    Medias Queries TABLET
+*/
+@media (max-width: 1169px){
+    nav{
+        width: 768px;
+    }
+    main{
+        width: 720px;
+    }
+    .texto2{
+        width: 600px;
+        flex-wrap: wrap;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .noticias{
+        flex-direction: column;
+    }
+    .direita{
+        margin: auto;
+    }
+    .esquerda{
+        margin: auto;
+    }
+    .galeria{
+        width: 768px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .slide{
+        width: 760px;
+        margin: auto;
+    }
+    .textoslide{
+        width: 650px;
+        margin: auto;
+    }
+    .bannerslide{
+        width: 760px;
+        margin: auto;
+    }
+}
+
+/*
+    Medias Queries SMART(Celular)
+*/
+@media (max-width:767px){
+    nav{
+        flex-direction: column;
+        width: 320px;
+    }
+    .menu{
+        flex-direction: column;
+        margin: auto;
+        width: 100px;
+        display: none;
+    }
+    .menu li{
+        padding: 5px;
+    }
+    main{
+        width: 320px;
+    }
+    .texto2{
+        width: 240px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .noticia1{
+        flex-direction: column;
+        width: 320px;
+    }
+    iframe{
+        width: 320px;
+        height: 180px;
+    }
+    .botao-menu{
+        display: block;
+    }
+    .galeria{
+        flex-direction: column;
+        width: 240px;
+        margin: auto;
+    }
+    .slide{
+        width: 320px;
+        margin: auto;
+    }
+    .textoslide{
+        width: 300px;
+        margin: auto;
+    }
+    .bannerslide{
+        width: 767px;
+        margin: auto;
+    }
+    .slider{
+        width: 320px;
+    }
+    
+}
+
+.home{
+    background-color: rgba(255,255,255,0.6);
+    height: 130px;
+}
+.home a{
+    background-color: #007290;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: fontebody;
+    color: white;
+    padding: 10px; 
+}
+.home p{
+    font-family: fontemenu;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.galerias{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.galerias h2{
+    font-family: fontebody;
+    text-align: center;
+    margin-top: 15px;
+    color: #007290; 
+    font-size: 25px;
+}
+.galerias p{
+    font-family: fontebody;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}
+#galerias a{
+    margin: 10px;
+    color: #007290;
+    
+}
+.galeria{
+    margin: 0 auto;
+    margin-top: 30px;   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:1500px;
+}
+.slide{
+    width: 1200px;
+    margin: auto;
+}
+.textoslide h2{
+    color: #007290;
+    font-size: 20px;
+}
+.textoslide p{
+    width: 1000px;
+    margin: auto;
+    color: black;
+}
+.bannerslide{
+    background-image: url(../imagens/ceu.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+
+
+
+
+
+
+
+
+

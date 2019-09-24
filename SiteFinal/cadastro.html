@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.botao-menu').click(function(){
+                    $('.menu').slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#"><img src="imagens/LOGO.png"></a>
+                <button class="botao-menu"><img src="imagens/botao.png"></button>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html" >Notícias</a></li>
+                    <li><a href="cadastro.html" class="ativo">Cadastro</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+        <div class="banner banner-cadastro">
+        
+        </div>
+        <main>
+            <h1>Cadastro</h1>
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    Nome:<br>
+                    <input type="text" class="entrada" placeholder="Digite seu nome"><br>
+                    Sobrenome:<br>
+                    <input type="text" class="entrada" placeholder="Digite seu sobrenome"><br>
+                    Sexo:<br>
+                    <input type="radio" name="sexo" checked> Masculino<br>
+                    <input type="radio" name="sexo"> Feminino<br>
+                    Data de nascimento:<br>
+                    <input type="date" class="data">
+                </fieldset>
+                <fieldset>
+                    <legend>Preferências</legend>
+                    Selecione os continentes de sua preferência:<br>
+                    <input type="checkbox"> América <br>
+                    <input type="checkbox"> Ásia <br>
+                    <input type="checkbox"> Europa <br>
+                    <input type="checkbox"> África<br>
+                    Quantas viagens nacionais ou internacionais você costuma fazer por ano? <input type="number" class="numero">
+                </fieldset>
+                <input type="submit" value="Enviar" class="botao">
+            </form>
+                
+        </main>
+        <footer>
+            <div class="redes-sociais">
+                <a href="#"><img src="imagens/facebook.png"></a>
+                <a href="#"><img src="imagens/instagram.png"></a>
+            </div>
+            <p>Todos os direitos reservados</p>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </body>
+</html>

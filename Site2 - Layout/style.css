@@ -1,0 +1,44 @@
+header{
+    background-color: green;
+    padding-bottom: 110px;
+}
+nav{
+    background-color: red;
+    width: 1000px;
+    height: 80px;
+    margin: auto;
+}
+main{
+    background-color: yellow;
+    width: 1124px;
+    margin: auto;
+    
+}
+section{
+    background-color: skyblue;
+    height: 200px;
+    width: 900px;
+    margin: auto;
+    
+}
+.segunda{
+    background-color: skyblue;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+div{
+    background-color: pink;
+    width: 100px;
+    height: 100px; 
+    margin: 50px;
+}
+footer{
+    background-color: lightgrey;
+    height: 90px;
+}

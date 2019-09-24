@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Início</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+        <script type="text/javascript" src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider();
+            });
+        </script>
+        <script type="text/javascript">
+            $(function(){
+                $('.botao-menu').click(function(){
+                    $('.menu').slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+        <nav>
+                <a href="#"><img src="imagens/LOGO.png"></a>
+                <button class="botao-menu"><img src="imagens/botao.png"></button>
+                <ul class="menu">
+                    <li><a href="index.html" class="ativo">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="bannerhome">
+        <div class="home">
+            <p>Tudo sobre o mundo...</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        </div>
+        <section class="galerias">
+                <h2>Liberte o viajante dentro de você</h2>
+                <p>Descubra nossos destinos mais populares</p>
+                    <div class="galeria">
+                        <a data-fancybox="gallery" href="imagens/bahia.jpg"><img src="imagens/bahia.jpg" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/mg.jpg"><img src="imagens/mg.jpg" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/natal.jpg"><img src="imagens/natal.jpg" width="350px"></a>
+                        <a data-fancybox="gallery" href="imagens/rio.jpg"><img src="imagens/rio.jpg" width="350px"></a>
+                    </div>                   
+        </section>
+        <div class="bannerslide">
+        <section class="slide">
+            <div class="slider">
+                <div class="textoslide">
+                    <h2>Missão</h2>
+                    <p>
+                        Clique em Inserir e escolha os elementos desejados nas diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado tema. No local em que você precisa deles.
+                    </p>
+                </div>
+                <div class="textoslide">
+                    <h2>Visão</h2>
+                    <p>
+                        Clique em Inserir e escolha os elementos desejados nas diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado tema. No local em que você precisa deles.
+                    </p>
+                </div>
+                <div class="textoslide">
+                    <h2>Valores</h2>
+                    <p>
+                        Clique em Inserir e escolha os elementos desejados nas diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado tema. No local em que você precisa deles.
+                    </p>
+                </div>
+            </div>
+        </section>
+        </div>    
+        <footer>
+            <div class="redes-sociais">
+                <a href="#"><img src="imagens/facebook.png"></a>
+                <a href="#"><img src="imagens/instagram.png"></a>
+            </div>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>
